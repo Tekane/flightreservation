@@ -1,20 +1,15 @@
 package com.tekane.flightreservation.beans;
 
-public class User {
-    private long id;
+import javax.persistence.*;
+
+@Entity
+public class User extends AbstractEntity {
+
+    @Column(name = "FIRST_NAME")
     private String firstName;
     private String lastName;
     private String email;
     private String password;
-
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getFirstName() {
         return firstName;

@@ -1,18 +1,17 @@
 package com.tekane.flightreservation.beans;
 
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+
+@Entity
 public class Reservation {
-    private Long id;
+
     private boolean checkedIn;
     private String numberOfBags;
+    @OneToOne
     private Passenger passenger;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @OneToOne
+    private Flight flight;
 
     public boolean isCheckedIn() {
         return checkedIn;
@@ -45,7 +44,5 @@ public class Reservation {
     public void setFlight(Flight flight) {
         this.flight = flight;
     }
-
-    private Flight flight;
 
 }
