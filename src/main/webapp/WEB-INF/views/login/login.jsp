@@ -11,16 +11,18 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>Register user</title>
+	<title>login</title>
 </head>
 <body>
-<form action="registerUser" method="post">
-  Fist Name: <input type="text" name"firstName"/>
-  Last Name: <input type="text" name"lastName"/>
-  User Name: <input type="text" name"email"/>
-  Password:  <input type="password" name"password"/>
-  Confirm password:<input type="password" name"Confirmpassword"/>
-  <input type="submit" value ="register"/>
+
+<form action="login" method="post">
+<pre>
+<h2>Login:</h2>
+  User Name: <input type="text" name="email"/>
+  Password:  <input type="password" name="password"/>
+  <input type="submit" value ="login"/>
+  ${error}
+</pre>
 </form>
 </body>
 </html>

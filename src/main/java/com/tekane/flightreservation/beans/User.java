@@ -5,7 +5,6 @@ import javax.persistence.*;
 @Entity
 public class User extends AbstractEntity {
 
-    @Column(name = "FIRST_NAME")
     private String firstName;
     private String lastName;
     private String email;
