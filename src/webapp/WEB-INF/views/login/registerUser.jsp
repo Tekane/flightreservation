@@ -15,11 +15,11 @@
 </head>
 <body>
 <form action="registerUser" method="post">
-  Fist Name: <input type="text" name"firstName"/>
-  Last Name: <input type="text" name"lastName"/>
-  User Name: <input type="text" name"email"/>
-  Password:  <input type="password" name"password"/>
-  Confirm password:<input type="password" name"Confirmpassword"/>
+  Fist Name: <input type="text" name= "firstName"/>
+  Last Name: <input type="text" name="lastName"/>
+  User Name: <input type="text" name="email"/>
+  Password:  <input type="password" name="password"/>
+  Confirm password:<input type="password" name="Confirmpassword"/>
   <input type="submit" value ="register"/>
 </form>
 </body>
