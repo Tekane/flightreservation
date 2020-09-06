@@ -29,8 +29,7 @@
     Card No:<input type="text" name="cardNumber"/>
     Expiry Date:<input type="text" name="expirationDate"/>
     CCV Code:<input type="text" name="securityCode"/>
-
-     <input type="hidden" name="flightId" value="${flight.id}">
+        <input type="hidden" name="flightId" value="${flight.id}">
     <input type="submit" value="confirm"/>
     </pre>
 </form>
