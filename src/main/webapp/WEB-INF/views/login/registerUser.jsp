@@ -13,7 +13,7 @@
 </head>
 <body>
 <h2>User Registration</h2>
-<form action="registerUser"  method="post">
+<form action="registerUser" method="post">
   Fist Name: <input type="text" name= "firstName"/>
     </br>
   Last Name: <input type="text" name="lastName"/>

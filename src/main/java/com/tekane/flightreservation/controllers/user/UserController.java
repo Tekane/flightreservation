@@ -1,4 +1,4 @@
-package com.tekane.flightreservation.controllers;
+package com.tekane.flightreservation.controllers.user;
 
 import com.tekane.flightreservation.beans.User;
 import com.tekane.flightreservation.repositories.UserRepository;
@@ -26,11 +26,11 @@ public class UserController {
         return "login/login";
     }
 
-    @PostMapping("login")
+    @PostMapping("/login")
     public String login(@RequestParam("email") String email, @RequestParam("password") String password, ModelMap model) {
         User userDetails = userRepository.findByEmail(email);
         if (userDetails.getPassword().equals(password)) {
-            return "login/findFlights";
+            return "flights/findFlights";
         } else {
             model.addAttribute("msg","Invalid Username or password. Please try again!!!");
         }
