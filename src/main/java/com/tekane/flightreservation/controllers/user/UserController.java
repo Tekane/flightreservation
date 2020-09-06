@@ -20,6 +20,10 @@ public class UserController {
         return "login/registerUser";
     }
 
+    @RequestMapping("/userLogin")
+    public String showLoginPage() {
+        return "login/login";
+    }
     @PostMapping("/registerUser")
     public String registerUser(@ModelAttribute("user") User user) {
         userRepository.save(user);
